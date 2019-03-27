@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>Converse Currency</legend>
+        <table>
+            <tr>
+                <th style="font-weight: bold;">Amount</th>
+                <th style="font-weight: bold">From Currency</th>
+                <th style="font-weight: bold">To Currency</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="value"></td>
+                <td>
+                    <select name="From" id="From">
+                        <option value="VND">Việt Nam Đồng</option>
+                        <option value="USD">United State Dollars</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="To" id="To">
+                        <option value="VND">Việt Nam Đồng</option>
+                        <option value="USD">United State Dollars</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" onclick="Converse();">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>Result is: <span id="result"></span></p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <script src="script.js"></script>
+</form>
+</body>
+</html>
